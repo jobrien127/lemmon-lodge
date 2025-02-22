@@ -51,7 +51,3 @@ This is a simple React application for www.lemmonlodge.com, featuring a home pag
 
 - Navigate to the home page to see the welcome message.
 - Go to the contact page to send a message using the contact form.
-
-## Contributing
-
-Feel free to submit issues and pull requests for new features, bug fixes, or improvements.
