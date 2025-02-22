@@ -1,0 +1,27 @@
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f8ff;
+  margin-top: 20px;
+}
+
+.home-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.home-container p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .home-container h1 {
+    font-size: 1.8em;
+  }
+
+  .home-container p {
+    font-size: 1em;
+  }
+}
