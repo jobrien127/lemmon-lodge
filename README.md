@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+# Lemmon Lodge React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application for www.lemmonlodge.com, featuring a home page and a contact page with email functionality.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Home page with a welcome message
+- Contact page with a form to send messages via EmailJS
+- Rate limiting to prevent multiple submissions within a short time frame
 
-### `yarn start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js and Yarn installed on your machine
 
-### `yarn test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `yarn build`
+   ```bash
+   git clone https://github.com/yourusername/lemmonlodge.git
+   cd lemmonlodge/react-app
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   yarn install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Create a `.env` file in the root of the project and add your EmailJS keys:
 
-### `yarn eject`
+   ```env
+   REACT_APP_EMAILJS_SERVICE_ID=your_emailjs_service_id
+   REACT_APP_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+   REACT_APP_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Running the App
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```bash
+   yarn start
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Open your browser and navigate to `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Navigate to the home page to see the welcome message.
+- Go to the contact page to send a message using the contact form.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+
+Feel free to submit issues and pull requests for new features, bug fixes, or improvements.
