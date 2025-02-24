@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const lastSubmissionTimeRef = useRef<number | null>(null);
 
-    // emailjs.init(process.env.REACT_APP_EMAILJS_PRIVATE_KEY!);
+    emailjs.init(process.env.REACT_APP_EMAILJS_PRIVATE_KEY!);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
