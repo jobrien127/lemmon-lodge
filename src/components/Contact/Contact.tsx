@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
             process.env.REACT_APP_EMAILJS_SERVICE_ID!,
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
             templateParams,
-            process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+            process.env.REACT_APP_EMAILJS_PRIVATE_KEY!
         ).then((response) => {
                 console.log('Email sent successfully!', response.status, response.text);
                 alert('Message sent successfully!');
@@ -87,8 +87,8 @@ const Contact: React.FC = () => {
             </form>
             <div className="contact-info">
                 <h3>Contact Information</h3>
-                <p>Email: owner@example.com</p>
-                <p>Phone: (123) 456-7890</p>
+                <p>Email: vjvranesic@gmail.com</p>
+                <p>Phone: +1 (303) 888-5087</p>
             </div>
         </div>
     );
