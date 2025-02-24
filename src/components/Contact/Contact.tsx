@@ -9,6 +9,8 @@ const Contact: React.FC = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const lastSubmissionTimeRef = useRef<number | null>(null);
 
+    // emailjs.init(process.env.REACT_APP_EMAILJS_PRIVATE_KEY!);
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log('Form submitted with values:', { name, email, message });
@@ -33,7 +35,7 @@ const Contact: React.FC = () => {
             process.env.REACT_APP_EMAILJS_SERVICE_ID!,
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
             templateParams,
-            process.env.REACT_APP_EMAILJS_PRIVATE_KEY!
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
         ).then((response) => {
                 console.log('Email sent successfully!', response.status, response.text);
                 alert('Message sent successfully!');
